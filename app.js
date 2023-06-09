@@ -7,8 +7,6 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
-// const supabase = createClient('https://wnqgtdjwtljjzjgjctdf.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InducWd0ZGp3dGxqanpqZ2pjdGRmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzgyMDM1MDIsImV4cCI6MTk5Mzc3OTUwMn0.aQ61vCTe3xbSM34N7v2nj_GLj0FGxvVT2xUSigLdqu0')
-
 const app = express();
 
 // view engine setup
@@ -24,23 +22,6 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-// Register 
-/*
-const signupHandler = async (e: FormEvent) => {
-  e.preventDefault();
-  try {
-    const { data, error } = await supabase.auth.signUp({
-      email,
-      password,
-    });
-    if (error) console.error(error);
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-};
-*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
