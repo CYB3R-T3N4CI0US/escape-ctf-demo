@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "escape";
-  src: url("/fonts/escape.woff2") format("woff2"), url("/fonts/escape.woff") format("woff");
+  src: url("/public/fonts/escape.woff2") format("woff2"), url("/fonts/escape.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
